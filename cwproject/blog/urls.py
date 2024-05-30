@@ -1,6 +1,10 @@
 from django.urls import path
-from blog.views import *
+from .views import *
 
-path('contact/', ContactView.as_view, name='contact_us'),
-path('home/', HomeView.as_view, name='home'),
-path('about/', AboutView.as_view, name='about')
+urlpatterns = [
+    # path('', HomeView.as_view, name='home'),
+    path('contact/', ContactView.as_view, name='contact_us'),
+    path('about/', AboutView.as_view, name='about'),
+    path('<str:color_name>/', ColorsView.as_view, name='color')
+]
+

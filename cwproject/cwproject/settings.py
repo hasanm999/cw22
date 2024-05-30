@@ -56,7 +56,7 @@ ROOT_URLCONF = 'cwproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'blog/../templates']
+        'DIRS': [BASE_DIR / 'blog/templates/parent']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
